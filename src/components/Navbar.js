@@ -42,7 +42,11 @@ export default function Navbar(props) {
               aria-label="Search"
             ></input>
           </form>
-          <div className={`form-check form-switch text-${props.color} mx-2 my-2`}>
+          <div
+            className={`form-check form-switch text-${
+              props.mode === "light" ? "dark" : "light"
+            } mx-2 my-2`}
+          >
             <input
               className="form-check-input"
               type="checkbox"
