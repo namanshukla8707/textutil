@@ -40,26 +40,26 @@ export default function Navbar(props) {
               type="search"
               placeholder="Search"
               aria-label="Search"
-            />
-            <div className={`form-check form-switch text-${props.color}`}>
-              <input
-                className="form-check-input"
-                type="checkbox"
-                onClick={props.toggleMode}
-                role="switch"
-                id="flexSwitchCheckDefault"
-              />
-              <label
-                className="form-check-label"
-                htmlFor="flexSwitchCheckDefault"
-              >
-                Switch Mode
-              </label>
-            </div>
-            <button className="btn btn-outline-primary" type="submit">
-              Search
-            </button>
+            ></input>
           </form>
+          <div className={`form-check form-switch text-${props.color} mx-2 my-2`}>
+            <input
+              className="form-check-input"
+              type="checkbox"
+              onClick={props.toggleMode}
+              role="switch"
+              id="flexSwitchCheckDefault"
+            />
+            <label
+              className="form-check-label"
+              htmlFor="flexSwitchCheckDefault"
+            >
+              Switch Mode
+            </label>
+          </div>
+          <button className="btn btn-outline-primary" type="submit">
+            Search
+          </button>
         </div>
       </div>
     </nav>
